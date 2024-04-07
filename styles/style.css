@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
 
+body {
+  margin: 0;
+}
+
 .page {
   font-family: 'Comfortaa', cursive;
   background-color: #a1cccc7d;
   width: 100%;
-}
-
-div {
-  /* border: 1px solid red; */
 }
 
 .header {
@@ -16,12 +16,10 @@ div {
   display: flex;
   height: 10%;
   width: 100%;
-  /* margin-bottom: 20px; */
 }
 
 .border_all {
   border: 5px solid #4a47477d;
-  /* z-index: 4; */
 }
 
 .border_top {
@@ -72,6 +70,7 @@ div {
   display: flex;
   justify-content: center;
   align-items: center; 
+  font-weight: bold;
 }
 
 .header__link {
@@ -95,7 +94,6 @@ div {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  /* height: 20%; */
 }
 
 .biography__view {
@@ -141,6 +139,7 @@ div {
   display: flex;
   justify-content: left;
   align-items: center;
+  font-size: 25px;
 }
 
 .skills {
@@ -160,7 +159,7 @@ div {
 .skill__view {
   width: 30%;
   min-width: 430px;
-  min-height: 400px;;
+  min-height: 380px;;
   display: flex;
   justify-content: center;
   align-items: center;
