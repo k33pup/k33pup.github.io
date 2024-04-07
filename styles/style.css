@@ -1,0 +1,284 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+
+.page {
+  font-family: 'Comfortaa', cursive;
+  background-color: #a1cccc7d;
+  width: 100%;
+}
+
+div {
+  /* border: 1px solid red; */
+}
+
+.header {
+  min-height: 130px;
+  min-width: 430px;
+  display: flex;
+  height: 10%;
+  width: 100%;
+  /* margin-bottom: 20px; */
+}
+
+.border_all {
+  border: 5px solid #4a47477d;
+  /* z-index: 4; */
+}
+
+.border_top {
+  border-top: 5px solid #4a47477d;
+}
+
+.border_bottom {
+  border-bottom: 5px solid #4a47477d;
+}
+
+.border_left {
+  border-left: 5px solid #4a47477d;
+}
+
+.border_right {
+  border-right: 5px solid #4a47477d;
+}
+
+.header__section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 30%;
+  min-width: 430px;
+}
+
+.header__logo {
+  min-height: 100px;
+  min-width: 100px;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+#header-logo {
+  background-size: cover;
+  width: 90%;
+  height: 70%;
+  margin: auto;
+}
+
+.header__title {
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.header__link {
+  font-size: 25px;
+  text-decoration: none;
+  color: #10191E;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.additional {
+  border: none;
+  width: 70%;
+}
+
+.biography {
+  border-top: none;
+  min-height: 500px;
+  min-width: 430px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 20%; */
+}
+
+.biography__view {
+  width: 30%;
+  min-width: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.biography__photo {
+  width: 80%;
+  height: 70%;
+  min-height: 280px;
+  min-width: 300px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#biography-photo {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.biography__info {
+  width: 69%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.biography__info_text {
+  width: 100%;
+  text-decoration: solid;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.skills {
+  width: 100%;
+}
+
+.skill {
+  border-top: none;
+  min-height: 400px;
+  min-width: 430px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 10%;
+}
+
+.skill__view {
+  width: 30%;
+  min-width: 430px;
+  min-height: 400px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill__photo {
+  height: 70%;
+  width: 75%;
+}
+
+.skill_photo_programming {
+  background-image: url("../images/cpppy.svg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5%;
+  min-height: 230;
+}
+
+.skill_photo_stock-market {
+  background-image: url("../images/stock_market.svg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5%;
+}
+
+.skill__overlay {
+  background-color: rgba(43, 43, 160, 0.8);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-decoration: none; 
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  margin-top: -5px; 
+  margin-left: -5px; 
+  opacity: 0;
+  border-radius: 5%;
+  border: 5px solid rgba(43, 43, 160, 0.8);;
+}
+
+.skill__info {
+  width: 70%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skill__info_text {
+  text-decoration: solid;
+  font-size: 30px;
+  width: 100%;
+}
+
+.list {
+  margin-left: 5%;
+}
+
+.skill__overlay:hover {
+  opacity: 1;
+}
+
+.footer {
+  min-height: 100px;
+  min-width: 430px;
+  display: flex;
+  height: 10%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer__section {
+  display: flex;
+  align-items: center; 
+}
+
+.contacts {
+  width: 30%;
+  justify-content: space-around;
+  min-width: 430px;
+}
+
+.footer__logo {
+  min-height: 100px;
+  min-width: 100px;
+  width: 25%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+#footer-logo {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.contact__link {
+  height: 100%; 
+  width: 100%;
+}
+
+.dev {
+  width: 30%;
+  justify-content: space-around;
+  min-width: 430px;
+}
+
+
+.github__link {
+  height: 100%;
+  width: 100%;
+}
