@@ -20,7 +20,9 @@
         <a class="header__link" href="#self">Богатенков Николай</a>
       </div>
     </div>
-    <div class="header__section additional"></div>
+    <div class="header__section additional">
+      <button class="additional__button additional__button-rain">Дождь!</button>
+    </div>
   </header>
   <main class="content">
     <section class="biography border_bottom">
@@ -32,7 +34,7 @@
       <div class="biography__info">
         <ul class="list list_name_biography">
           <li class="biography__info_text"><h1>Студент 1 курса ВШПИ, МФТИ, программная инженерия;</h1></li>
-          <li class="biography__info_text"><h1>Разработчик на C++ и Python3;</h1></li>
+          <li class="biography__info_text"><h1>Разработчик на C++, Python3 и Solidity;</h1></li>
         </ul>
       </div>
     </section>
@@ -47,13 +49,14 @@
           <ul class="list">
             <li class="skill__info_text"><h3>C++: stl;</h3></li>
             <li class="skill__info_text"><h3>Python3: aiogram, flask;</h3></li>
+            <li class="skill__info_text"><h3>Solidity: contracts, testing;</h3></li>
           </ul> 
         </div>
       </div>
       <div class="skill skill_name_stock-market border_bottom">
         <div class="skill__view">
           <div class="skill__photo skill_photo_stock-market border_all">
-            <a href="#" class="skill__overlay">торговля активами</a>
+            <a href="#" class="skill__overlay">финансы</a>
           </div>
         </div>
         <div class="skill__info">
@@ -65,8 +68,25 @@
         </div>
       </div>
     </section>
+    <div class="rain rain_animation"></div>
   </main>
   <footer class="footer border_bottom">
+    <a href="#logo-tg" class="open_feedback">Отправить сообщение</a>
+    <div class="feedback-overlay">
+      <div class="feedback_popup">
+        <h2>Обратная связь</h2>
+        <form id="feedback_form">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="message">Сообщение:</label>
+          <textarea id="message" name="message" required></textarea><br><br>
+          <input type="submit" value="Отправить">
+        </form>
+        <span class="close_feedback">Закрыть</span>
+      </div>
+    </div>
     <div class="footer__section contacts">
       <h2 class="footer__contact_text">
         Связаться со мной:
@@ -87,6 +107,11 @@
         </a> 
       </div> 
     </div>
+    <div id="timer"></div>
   </footer>
+  <script src="./scripts/bodypopup.js"></script>
+  <script src="./scripts/rain.js"></script>
+  <script src="./scripts/timer.js"></script>
+  <script src="./scripts/form.js"></script>
 </body>
 </html>
