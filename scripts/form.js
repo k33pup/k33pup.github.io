@@ -44,28 +44,59 @@ form.addEventListener("submit", (e) => {
   });
 });
 
-const validateEmail = (email) => {
+
+input_name = document.querySelector("#name");
+function validName(name) {
+  if (name.length === 0) {
+    return false;
+  }
+  return true;
+}
+
+input_email = document.querySelector("#email");
+const validEmail = (email) => {
   return email.match(
     /^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/
   );
 };
 
-input_email = document.querySelector("#email");
 
-
-function handleEmail() {
-  if (validateEmail(input_email.value)) {
-    input_email.classList.remove("invalid");
-    input_email.classList.add("valid");
-  } else {
-    input_email.classList.remove("valid");
-    input_email.classList.add("invalid");
+input_message = document.querySelector("#message");
+function validMessage(message) {
+  if (message === "") {
+    return false;
   }
-} 
+  return true;
+}
 
-handleEmail();
+
+function handleInput(predicat, element) {
+  if (predicat(element.value)) {
+    element.classList.remove("invalid");
+    element.classList.add("valid");
+  } else {
+    element.classList.remove("valid");
+    element.classList.add("invalid");
+  }
+}
+
+handleInput(validEmail, input_email);
+handleInput(validName, input_name)
+handleInput(validMessage, input_message)
+
 input_email.addEventListener("keydown", (e) => {
-  handleEmail();
+  handleInput(validEmail, input_email);
 });
+
+input_name.addEventListener("keydown", (e) => {
+  handleInput(validName, input_name);
+});
+
+input_message.addEventListener("keydown", (e) => {
+  handleInput(validMessage, input_message);
+});
+
+
+
 
 

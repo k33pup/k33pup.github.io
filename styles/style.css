@@ -435,7 +435,9 @@ body {
 
 
 #feedback_form #message {
+  width: 97%;
   max-width: 97%;
+  min-width: 97%;
 }
 
 @keyframes feedback_show {
