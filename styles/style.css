@@ -18,6 +18,15 @@ body {
   width: 100%;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #D0E6E6;
+}
+
 .border_all {
   border: 5px solid #4a47477d;
 }
@@ -385,6 +394,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 100;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
@@ -412,15 +422,17 @@ body {
   cursor: pointer;
 }
 
-#feedback_form input:invalid {
+
+.invalid {
   border-color: #ff6971;
   box-shadow: 0 0 0 2px #ff6971;
 }
 
-#feedback_form input:required:valid {
+.valid {
   border-color: #4CAF50;
   box-shadow: 0 0 0 2px #4CAF50;
 }
+
 
 #feedback_form #message {
   max-width: 97%;

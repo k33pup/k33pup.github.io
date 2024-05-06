@@ -43,3 +43,29 @@ form.addEventListener("submit", (e) => {
     console.error(error);
   });
 });
+
+const validateEmail = (email) => {
+  return email.match(
+    /^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/
+  );
+};
+
+input_email = document.querySelector("#email");
+
+
+function handleEmail() {
+  if (validateEmail(input_email.value)) {
+    input_email.classList.remove("invalid");
+    input_email.classList.add("valid");
+  } else {
+    input_email.classList.remove("valid");
+    input_email.classList.add("invalid");
+  }
+} 
+
+handleEmail();
+input_email.addEventListener("keydown", (e) => {
+  handleEmail();
+});
+
+

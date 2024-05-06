@@ -2,6 +2,7 @@ const rainButton = document.querySelector(".additional__button-rain");
 const rain = document.querySelector(".rain");
 rainButton.addEventListener('click', function () {
   rain.classList.toggle('rain_open');
+  rain.classList.toggle('rain_rain_animation');
 })
 
 window.addEventListener('resize', function () {
