@@ -7,6 +7,14 @@ const sendButton = form.querySelector("input[type=submit]");
 
 openPopup.addEventListener("click", () => {
   feedbackOverlay.style.display = "block";
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      feedbackOverlay.style.display = "none";
+      sendButton.disabled = false;
+      sendButton.value = "Отправить";
+    }
+  });
 });
 
 closePopup.addEventListener("click", () => {
