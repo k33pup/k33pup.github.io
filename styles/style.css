@@ -411,7 +411,11 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 20%;
   min-width: 220px;
-  animation: feedback_show 0.5s ease-in-out forwards;
+  animation: smooth_show_frames 0.5s ease-in-out forwards;
+}
+
+.smooth {
+  animation: smooth_show_frames 0.3s linear;
 }
 
 
@@ -440,7 +444,7 @@ body {
   min-width: 97%;
 }
 
-@keyframes feedback_show {
+@keyframes smooth_show_frames {
   0% {
     opacity: 0;
   }
@@ -451,16 +455,3 @@ body {
     opacity: 1;
   }
 }
-
-@keyframes feedback_close {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-

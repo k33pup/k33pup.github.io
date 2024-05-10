@@ -80,23 +80,11 @@ function handleInput(predicat, element) {
   }
 }
 
-handleInput(validEmail, input_email);
-handleInput(validName, input_name)
-handleInput(validMessage, input_message)
-
-input_email.addEventListener("keydown", (e) => {
+setInterval(() => {
   handleInput(validEmail, input_email);
-});
-
-input_name.addEventListener("keydown", (e) => {
   handleInput(validName, input_name);
-});
-
-input_message.addEventListener("keydown", (e) => {
   handleInput(validMessage, input_message);
-});
-
-
+}, 100);
 
 
 
